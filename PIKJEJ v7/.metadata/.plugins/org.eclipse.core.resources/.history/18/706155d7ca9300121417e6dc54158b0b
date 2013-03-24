@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".AltTravel" >
+
+     <ImageButton
+         android:id="@+id/home"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:background="@drawable/ic_tab_home_unselected"
+         android:contentDescription="@string/title_activity_home"
+         android:onClick="Home" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/home"
+        android:background="@drawable/ic_tab_settings_unselected"
+        android:contentDescription="@string/title_activity_settings"
+        android:onClick="Settings" />
+
+    <ImageButton
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/settings"
+        android:background="@drawable/ic_tab_about_unselected"
+        android:contentDescription="@string/title_activity_about"
+        android:onClick="About" />
+
+    <ImageButton
+        android:id="@+id/userguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/about"
+        android:background="@drawable/ic_tab_userguide_unselected"
+        android:contentDescription="@string/title_activity_userguide"
+        android:onClick="Userguide" />
+
+	<ScrollView
+    android:id="@+id/ScrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="82dp" >
+
+</ScrollView>
+	<Button
+	    android:id="@+id/MerseyRailButton1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:contentDescription="@string/alt_travel_merseyrail"
+	    android:onClick="Merseyrail"
+	    android:text="@string/alt_travel_merseyrail"  />
+	<Button
+	    android:id="@+id/arrivaButton1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:contentDescription="@string/alt_travel_arriva"
+	    android:onClick="Arriva"
+	    android:text="@string/alt_travel_arriva" />
+
+</RelativeLayout>

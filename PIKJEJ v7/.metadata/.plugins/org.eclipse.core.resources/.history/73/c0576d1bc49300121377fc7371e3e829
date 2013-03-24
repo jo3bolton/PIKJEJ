@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".Home" >
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_tab_home_unselected"
+        android:contentDescription="@string/title_activity_home"
+        android:onClick="Home" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/home"
+        android:background="@drawable/ic_tab_settings_unselected"
+        android:contentDescription="@string/title_activity_settings"
+        android:onClick="Settings" />
+
+    <ImageButton
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/settings"
+        android:background="@drawable/ic_tab_about_unselected"
+        android:contentDescription="@string/title_activity_about"
+        android:onClick="About" />
+
+    <ImageButton
+        android:id="@+id/userguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/about"
+        android:background="@drawable/ic_tab_userguide_unselected"
+        android:contentDescription="@string/title_activity_userguide"
+        android:onClick="Userguide" />
+
+    <ImageButton
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sdat"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_predictor_unselected"
+        android:contentDescription="@string/title_activity_predictor"
+        android:onClick="Predictor" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
+        android:text="@string/title_activity_home"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/tac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/home"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_tandc_unselected"
+        android:contentDescription="@string/title_activity_terms"
+        android:onClick="Terms" />
+
+    <ImageButton
+        android:id="@+id/sdat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tac"
+        android:background="@drawable/btn_schedule_unselected"
+        android:contentDescription="@string/title_activity_schedule"
+        android:onClick="Schedule" />
+
+    <ImageButton
+        android:id="@+id/ATravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sdat"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_alttravel_unselected"
+        android:contentDescription="@string/title_activity_alt_travel"
+        android:onClick="AltTravel" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="DigitalClock" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pikjej"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait" >
+               <activity
+            android:name="com.example.pikjej.Splash"
+            android:configChanges="portrait|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/FullscreenTheme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+           <activity
+            android:name="com.example.pikjej.Home"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.pikjej.About"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.pikjej.AltTravel"
+            android:label="@string/title_activity_alt_travel"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.pikjej.Userguide"
+            android:label="@string/title_activity_userguide"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.pikjej.Schedule"
+            android:label="@string/title_activity_schedule"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.pikjej.Settings"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.pikjej.Predictor"
+            android:label="@string/title_activity_predictor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.pikjej.Terms"
+            android:label="@string/title_activity_terms"
+            android:screenOrientation="portrait" >
+        </activity>
+
+    </application>
+
+</manifest>
